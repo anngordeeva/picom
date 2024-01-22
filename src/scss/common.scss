@@ -1,0 +1,29 @@
+@import 'fonts.scss';
+@import 'variables.scss';
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: 100%;
+}
+
+body {
+  min-width: 320px;
+  font-family: "Open Sans";
+  background-color: $white;
+  color: $black;
+}

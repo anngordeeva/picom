@@ -1,0 +1,52 @@
+
+@mixin clear-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+@mixin container {
+    max-width: 79.5rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+@mixin btn {
+    padding: 0.906rem 1.5rem;
+    background-color: $green;
+    cursor: pointer;
+    color: $white;
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 19.07px;
+    transition: 0.3s background-color ease-in-out;
+
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: #16674f;
+        }
+}
+
+@mixin btn-empty {
+    padding: 0.906rem 1.5rem;
+    background-color: $white;
+    cursor: pointer;
+    color: $green;
+    border: 1px solid $green;
+    border-radius: 0.25rem;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 19.07px;
+    transition: 0.3s border ease-in-out, 0.3s color ease-in-out, 0.3s background-color ease-in-out;
+
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: $green;
+            border: 1 px solid #16674f;
+            color: $white;
+        }
+}
